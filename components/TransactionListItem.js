@@ -14,7 +14,7 @@ export default function TransactionListItem({ itemData }) {
         <Text>{itemData.transactionName}</Text>
         <View style={styles.rateView}>
           <Text style={styles.textColor}>
-            ${itemData.transactionPrice.toFixed(2)}
+            ${itemData?.transactionPrice?.toFixed(2)}
           </Text>
           <Feather name="chevron-right" size={22} color="#3581B8" />
         </View>

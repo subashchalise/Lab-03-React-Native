@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { financialData } from "../financialData";
 
 const ListItem = ({ price, title }) => {
   return (
@@ -11,7 +10,7 @@ const ListItem = ({ price, title }) => {
   );
 };
 
-export default function SummaryPage() {
+export default function SummaryPage({ financialData }) {
   const totalNumberOfTransactions = financialData.length;
 
   let totalBalance = 0;
